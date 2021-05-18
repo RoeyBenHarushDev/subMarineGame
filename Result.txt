@@ -1,0 +1,109 @@
+	Player 1: A1 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 2: A3  YOU MISSED!
+
+	Player 1: B1 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 2: C1  ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: C1 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 2: I2  ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: D1 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: H2 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: J2 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: B3 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: B4 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: E3 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: F3 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: A6 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: A7 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: A8 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: D6 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: D7 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: H5 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: H6 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: H7 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: B10 ITS A HIT! YOU ARE ON FIRE!
+
+	Player 1: G10 ITS A HIT! YOU ARE ON FIRE!
+
+		
+Player 1 is the WINNER!
+
+Player Number 1 board: 
+
+|   |   | ♠ | ♦ | ♦ | ♦ |   |   |   |   |
+|   |   |   |   |   |   |   |   | ♠ |   |
+| ♣ | ♦ | ♦ | ♦ |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   | ♦ |
+| ♦ |   |   |   |   | ♦ |   |   |   | ♦ |
+| ♦ |   |   |   |   | ♦ |   |   |   | ♦ |
+|   |   | ♦ |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   | ♦ |   |
+|   |   |   |   | ♦ |   |   |   |   |   |
+| ♦ | ♦ |   |   |   |   |   |   |   |   |
+-----------------------
+'♦' -> Unhited Submarine Spot
+'♣' -> Hit
+'♠' -> Miss
+
+Player Number 2 board: 
+
+| ♠ | ♠ | ♠ | ♠ |   |   |   |   |   |   |
+|   |   |   |   |   |   |   | ♠ |   | ♠ |
+|   | ♠ |   |   | ♠ | ♠ |   |   |   |   |
+|   | ♠ |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   | ♠ |   |   |
+| ♠ |   |   | ♠ |   |   |   | ♠ |   |   |
+| ♠ |   |   | ♠ |   |   |   | ♠ |   |   |
+| ♠ |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   | ♠ |   |   |   |   | ♠ |   |   |   |
+-----------------------
+'♦' -> Unhited Submarine Spot
+'♣' -> Hit
+'♠' -> Miss
+
+
+MOVES:
+
+PLAYER_1 A1
+PLAYER_2 A3
+PLAYER_1 B1
+PLAYER_2 C1
+PLAYER_1 C1
+PLAYER_2 I2
+PLAYER_1 D1
+PLAYER_1 H2
+PLAYER_1 J2
+PLAYER_1 B3
+PLAYER_1 B4
+PLAYER_1 E3
+PLAYER_1 F3
+PLAYER_1 A6
+PLAYER_1 A7
+PLAYER_1 A8
+PLAYER_1 D6
+PLAYER_1 D7
+PLAYER_1 H5
+PLAYER_1 H6
+PLAYER_1 H7
+PLAYER_1 B10
+PLAYER_1 G10

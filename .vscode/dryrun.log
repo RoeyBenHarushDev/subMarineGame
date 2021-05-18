@@ -1,0 +1,10 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Users/Roey Ben Harush/Desktop/New folder/Ex3-SubMarineGame'
+gcc -c main.c
+ 
+gcc -c InitSubmarine.c
+gcc -c midGame.c
+gcc -c endGame.c
+gcc main.o InitSubmarine.o midGame.o endGame.o -o Game.exe
+make: Leaving directory 'c:/Users/Roey Ben Harush/Desktop/New folder/Ex3-SubMarineGame'
+ 

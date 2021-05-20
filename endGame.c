@@ -10,8 +10,6 @@
 #define ORANGE "\x1b[33m"
 #define BLUE "\x1b[34m"
 
-
-
 /********************EndGame**************/
 void printMovments(FILE *result, FILE *moves)
 {
@@ -30,50 +28,56 @@ void printMovments(FILE *result, FILE *moves)
         else
             break;
     }
-    fclose(result);
-    fclose(moves);
-    exit(1);
+    return;
 }
 
 void PrintBoards(Board *board1, Board *board2, char *argv[])
 {
-    int player, col, row;
+    int player, col, row, numIndex = 1, charIndex = 65;
     Board *board;
-    // FILE *resultFile = fopen("Result.txt", "a");
     FILE *resultFile = fopen(argv[4], "a");
     for (player = 0; player < 2; player++)
     {
+        numIndex = 1;
         if (player == 0)
             board = board1;
         else
             board = board2;
         fprintf(resultFile, "Player Number %d board: \n", player + 1);
         printf("Player Number %d board: \n", player + 1);
+        fprintf(resultFile,"\n      ");
+        printf("\n     ");
+        for (int i = 65; i < 75; i++)
+        {
+            fprintf(resultFile,"%c   ", i);
+            printf("%c   ", i);
+        }
         for (row = 0; row < 10; row++)
         {
-            fprintf(resultFile, "\n|");
-            printf("\n|");
+
+            fprintf(resultFile, "\n%0.2d  |", numIndex);
+            printf("\n%0.2d |", numIndex++);
             for (col = 0; col < 10; col++)
             {
                 if (board->Matrix[row][col].stat == 0)
-                { 
-                    fprintf(resultFile, "   |");
-                    printf(BLUE " %c " RESET "|", 219);// 223 or 219
+                {
+                    fprintf(resultFile, " ~ |");
+                    printf(BLUE " %c " RESET "|", 219);
                 }
                 if (board->Matrix[row][col].stat == 1)
                 {
                     fprintf(resultFile, " ♦ |");
-                    printf(GREEN " %c " RESET "|", 219);                    
+                    printf(GREEN " %c " RESET "|", 219);
                 }
                 if (board->Matrix[row][col].stat == 2)
                 {
-                    fprintf(resultFile, "   |");
+                    fprintf(resultFile, " ~ |");
                     printf(BLUE " %c " RESET "|", 219);
                 }
                 if (board->Matrix[row][col].stat == 3)
                 {
                     fprintf(resultFile, " ♣ |");
-                    printf(ORANGE " %c "RESET "|", 219);
+                    printf(ORANGE " %c " RESET "|", 219);
                 }
                 if (board->Matrix[row][col].stat == 4)
                 {
@@ -81,40 +85,37 @@ void PrintBoards(Board *board1, Board *board2, char *argv[])
                     printf(RED " %c " RESET "|", 219);
                 }
             }
-                printf("\n");
+            printf("\n");
         }
         fprintf(resultFile, "\n");
         printf("\n");
         fprintf(resultFile, "-----------------------\n");
         printf("-----------------------\n");
-        fprintf(resultFile, "'♦' -> Unhited Submarine Spot\n'♣' -> Hit\n'♠' -> Miss\n\n");
-        printf(GREEN "%c "RESET"->  Unhited Submarine Spot\n"RED"%c" RESET" -> Hit\n"ORANGE"%c"RESET" -> Miss\n\n", 223, 223, 223);
+        fprintf(resultFile, "'~' -> The Pacific Ocean\n'♦' -> Unhited Submarine Spot\n'♠' -> Hit\n'♣' -> Miss\n\n");
+        printf(BLUE "%c " RESET "-> The Pacific Ocean\n" GREEN "%c " RESET "-> Unhited Submarine Spot\n" RED "%c" RESET " -> Hit\n" ORANGE "%c" RESET " -> Miss\n\n", 219, 219, 219, 219);
     }
-     fclose(resultFile);
+    fclose(resultFile);
 }
-int checkIfWin(Board *board1, Board *board2, FILE *result)
+
+int checkIfWin(Board *board, FILE *result, int playerNum)
 {
-    int num = 0;
-    if (board1->Counter == 20)
-        num = 1;
-    if (board2->Counter == 20)
-        num = 2;
-    switch (num)
+    if (board->Counter == 20)
     {
-    case 0:
-        return 0;
-    case 1:
-        fprintf(result, "\t\t\nPlayer 2 is the WINNER!\n\n");
-        printf("\t\t\nPlayer 2 is the WINNER!\n\n");
-
-        // freeBoards(board1,board2);
-        break;
-    case 2:
-        fprintf(result, "\t\t\nPlayer 1 is the WINNER!\n\n");
-        printf("\t\t\nPlayer 1 is the WINNER!\n\n");
-        // freeBoards(board1,board2);
-
-    default:
-        break;
+        fprintf(result, "\t\t\nPlayer %d is the WINNER!\n\n", playerNum);
+        printf("\t\t\nPlayer %d is the " GREEN "W" RED "I" ORANGE "N" BLUE "N" ORANGE "E" RED "R" GREEN "!" RESET "\n\n", playerNum);
+        return 1;
     }
+    return 0;
+}
+void freeAll(Board *board1, Board *board2)
+{
+    free(board1);
+    free(board2);
+}
+void closeAll(FILE *FILE1, FILE *FILE2, FILE *FILE3, FILE *FILE4)
+{
+    fclose(FILE1);
+    fclose(FILE2);
+    fclose(FILE3);
+    fclose(FILE4);
 }

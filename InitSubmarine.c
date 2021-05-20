@@ -32,7 +32,6 @@ void getDataFromFile(Board *board, FILE *playerLocation)
             line[i] = fgetc(playerLocation);
             if (line[i] == '\n')
             {
-                // line[i] = '\0';
                 converteLine2Quar(board, line);
                 i = -1;
                 for (int i = 0; i < 20; i++)
@@ -146,6 +145,8 @@ void initSubMarine(Board *board, Quar location1, Quar location2)
     if ((col1 == col2) && (location1.row == location2.row))
     { //mean its a single subMarine.
         board->Matrix[location1.row][col1].stat = 1;
+        board->Matrix[location1.row][col1].dir = 1;
+
         if (col1 > 0 && col1 < 9)
         {
             //means its not on sides
@@ -213,6 +214,7 @@ void initSubMarine(Board *board, Quar location1, Quar location2)
             while (location1.row <= location2.row)
             {
                 board->Matrix[location1.row][col1].stat = 1;
+                board->Matrix[location1.row][col1].dir = 3;
                 board->Matrix[location1.row][col1 - 1].stat = 2;
                 board->Matrix[location1.row++][col1 + 1].stat = 2;
             }
@@ -238,6 +240,7 @@ void initSubMarine(Board *board, Quar location1, Quar location2)
             while (location1.row <= location2.row)
             {
                 board->Matrix[location1.row][col1].stat = 1;
+                board->Matrix[location1.row][col1].dir = 3;
                 board->Matrix[location1.row++][col1 + 1].stat = 2;
             }
             if (location1.row != 9)
@@ -261,6 +264,7 @@ void initSubMarine(Board *board, Quar location1, Quar location2)
             while (location1.row <= location2.row)
             {
                 board->Matrix[location1.row][col1].stat = 1;
+                board->Matrix[location1.row][col1].dir = 3;
                 board->Matrix[location1.row++][col1 - 1].stat = 2;
             }
             if (location1.row != 9)
@@ -295,6 +299,7 @@ void initSubMarine(Board *board, Quar location1, Quar location2)
                 board->Matrix[location1.row - 1][col1].stat = 2;
                 board->Matrix[location1.row + 1][col1].stat = 2;
                 board->Matrix[location1.row][col1++].stat = 1;
+                board->Matrix[location1.row][col1].dir=2;
             }
             if (col2 != 9)
             {
@@ -328,6 +333,7 @@ void initSubMarine(Board *board, Quar location1, Quar location2)
             {
                 board->Matrix[location1.row + 1][col1].stat = 2;
                 board->Matrix[location1.row][col1++].stat = 1;
+                board->Matrix[location1.row][col1].dir=2;
             }
             if (col2 != 9)
             {
@@ -358,6 +364,7 @@ void initSubMarine(Board *board, Quar location1, Quar location2)
             {
                 board->Matrix[location1.row - 1][col1].stat = 2;
                 board->Matrix[location1.row][col1++].stat = 1;
+                board->Matrix[location1.row][col1].dir=2;
             }
             if (col2 != 9)
             {

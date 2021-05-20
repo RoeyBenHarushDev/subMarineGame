@@ -4,25 +4,37 @@
 
 	Player 1: B1 ITS A HIT! YOU ARE ON FIRE!
 
-	Player 2: C1  ITS A HIT! YOU ARE ON FIRE!
+	Player 2: C1 ITS A HIT! YOU ARE ON FIRE!
 
 	Player 1: C1 ITS A HIT! YOU ARE ON FIRE!
 
-	Player 2: I2  ITS A HIT! YOU ARE ON FIRE!
+	Player 2: I2 ITS A HIT! YOU ARE ON FIRE!
+
+		You've destruct the whole submarine! WELL DONE LAD!
 
 	Player 1: D1 ITS A HIT! YOU ARE ON FIRE!
 
+		You've destruct the whole submarine! WELL DONE LAD!
+
 	Player 1: H2 ITS A HIT! YOU ARE ON FIRE!
 
+		You've destruct the whole submarine! WELL DONE LAD!
+
 	Player 1: J2 ITS A HIT! YOU ARE ON FIRE!
+
+		You've destruct the whole submarine! WELL DONE LAD!
 
 	Player 1: B3 ITS A HIT! YOU ARE ON FIRE!
 
 	Player 1: B4 ITS A HIT! YOU ARE ON FIRE!
 
+		You've destruct the whole submarine! WELL DONE LAD!
+
 	Player 1: E3 ITS A HIT! YOU ARE ON FIRE!
 
 	Player 1: F3 ITS A HIT! YOU ARE ON FIRE!
+
+		You've destruct the whole submarine! WELL DONE LAD!
 
 	Player 1: A6 ITS A HIT! YOU ARE ON FIRE!
 
@@ -30,9 +42,13 @@
 
 	Player 1: A8 ITS A HIT! YOU ARE ON FIRE!
 
+		You've destruct the whole submarine! WELL DONE LAD!
+
 	Player 1: D6 ITS A HIT! YOU ARE ON FIRE!
 
 	Player 1: D7 ITS A HIT! YOU ARE ON FIRE!
+
+		You've destruct the whole submarine! WELL DONE LAD!
 
 	Player 1: H5 ITS A HIT! YOU ARE ON FIRE!
 
@@ -40,7 +56,11 @@
 
 	Player 1: H7 ITS A HIT! YOU ARE ON FIRE!
 
+		You've destruct the whole submarine! WELL DONE LAD!
+
 	Player 1: B10 ITS A HIT! YOU ARE ON FIRE!
+
+		You've destruct the whole submarine! WELL DONE LAD!
 
 	Player 1: G10 ITS A HIT! YOU ARE ON FIRE!
 
@@ -49,37 +69,41 @@ Player 1 is the WINNER!
 
 Player Number 1 board: 
 
-|   |   | ♠ | ♦ | ♦ | ♦ |   |   |   |   |
-|   |   |   |   |   |   |   |   | ♠ |   |
-| ♣ | ♦ | ♦ | ♦ |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   | ♦ |
-| ♦ |   |   |   |   | ♦ |   |   |   | ♦ |
-| ♦ |   |   |   |   | ♦ |   |   |   | ♦ |
-|   |   | ♦ |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   | ♦ |   |
-|   |   |   |   | ♦ |   |   |   |   |   |
-| ♦ | ♦ |   |   |   |   |   |   |   |   |
+      A   B   C   D   E   F   G   H   I   J   
+01  | ~ | ~ | ♠ | ♦ | ♦ | ♦ | ~ | ~ | ~ | ~ |
+02  | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ♠ | ~ |
+03  | ♣ | ♦ | ♦ | ♦ | ~ | ~ | ~ | ~ | ~ | ~ |
+04  | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ♦ |
+05  | ♦ | ~ | ~ | ~ | ~ | ♦ | ~ | ~ | ~ | ♦ |
+06  | ♦ | ~ | ~ | ~ | ~ | ♦ | ~ | ~ | ~ | ♦ |
+07  | ~ | ~ | ♦ | ~ | ~ | ~ | ~ | ~ | ~ | ~ |
+08  | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ♦ | ~ |
+09  | ~ | ~ | ~ | ~ | ♦ | ~ | ~ | ~ | ~ | ~ |
+10  | ♦ | ♦ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ |
 -----------------------
+'~' -> The Pacific Ocean
 '♦' -> Unhited Submarine Spot
-'♣' -> Hit
-'♠' -> Miss
+'♠' -> Hit
+'♣' -> Miss
 
 Player Number 2 board: 
 
-| ♠ | ♠ | ♠ | ♠ |   |   |   |   |   |   |
-|   |   |   |   |   |   |   | ♠ |   | ♠ |
-|   | ♠ |   |   | ♠ | ♠ |   |   |   |   |
-|   | ♠ |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   | ♠ |   |   |
-| ♠ |   |   | ♠ |   |   |   | ♠ |   |   |
-| ♠ |   |   | ♠ |   |   |   | ♠ |   |   |
-| ♠ |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |
-|   | ♠ |   |   |   |   | ♠ |   |   |   |
+      A   B   C   D   E   F   G   H   I   J   
+01  | ♠ | ♠ | ♠ | ♠ | ~ | ~ | ~ | ~ | ~ | ~ |
+02  | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ♠ | ~ | ♠ |
+03  | ~ | ♠ | ~ | ~ | ♠ | ♠ | ~ | ~ | ~ | ~ |
+04  | ~ | ♠ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ |
+05  | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ♠ | ~ | ~ |
+06  | ♠ | ~ | ~ | ♠ | ~ | ~ | ~ | ♠ | ~ | ~ |
+07  | ♠ | ~ | ~ | ♠ | ~ | ~ | ~ | ♠ | ~ | ~ |
+08  | ♠ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ |
+09  | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ | ~ |
+10  | ~ | ♠ | ~ | ~ | ~ | ~ | ♠ | ~ | ~ | ~ |
 -----------------------
+'~' -> The Pacific Ocean
 '♦' -> Unhited Submarine Spot
-'♣' -> Hit
-'♠' -> Miss
+'♠' -> Hit
+'♣' -> Miss
 
 
 MOVES:

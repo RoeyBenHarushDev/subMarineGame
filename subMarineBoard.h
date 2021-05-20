@@ -4,6 +4,7 @@
 
 typedef enum letterToNumber{a = 1,b,c,d,e,f,g,h,i} Letter;
 typedef enum stat {Empty = 0, Full, Error, Miss, Hit} stat;
+typedef enum diraction {single=1,row,col} dir;
 
 typedef struct  SubmarineQuardinate{
     Letter col;
@@ -13,6 +14,7 @@ typedef struct  SubmarineQuardinate{
 typedef struct Square{
     Quar index;
     stat stat;
+    dir dir;
 }Square;
 
 typedef struct Board{
@@ -21,10 +23,6 @@ typedef struct Board{
 }Board;
 /*  Gets the files and with them creates the 2 game boards and reset boards  */
 Board *CreateBoards();
-/* Print all player's boards to  txt file */
-// void PrintBoards(Board*, Board*, char *);
-/* Remove the game boards */
-// void RemoveBoards(Board*);
 void ResetBoards(Board *board);
 void getDataFromFile(Board*, FILE *Location);
 void converteLine2Quar(Board *board, char *location);
